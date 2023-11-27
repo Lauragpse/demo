@@ -14,8 +14,7 @@ import com.example.aula.demo.model.Pessoa;
 public class PessoaController {
 
     @GetMapping("/create")
-
-    public String create() {
+    public String mostrarhtml() {
         return "create";
     }
 
@@ -25,7 +24,7 @@ public class PessoaController {
      * telefone) {
      */
 
-    public void create(Pessoa pessoa) {
+    public void pegarinfos(Pessoa pessoa) {
         System.out.println("Meu nome é: " + pessoa.getNome());
         System.out.println("Meu telefone é: " + pessoa.getTelefone());
     }
@@ -34,5 +33,4 @@ public class PessoaController {
      * pessoa.setNome(nome);
      * pessoa.setTelefone(telefone);
      */
-
 }
